@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  background: rgb(36,36,36);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (min-width: 1024px){
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+  .App {
+    text-align: center;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App-header {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navarea{
+    background-color: #3687c9;
+    width: 95vw;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    justify-content: space-between;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    
   }
+  .topnav{
+    background-color: #489ee4;
+    width: 100%;
+    display: flex;
+    height: 200px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .navoptions{
+    /*background-color: blueviolet;*/
+    justify-content: space-around;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .navoptions *{
+    transition: all .2s ease;
+    
+  }
+  .navoptions *:hover{
+    transform: scale(1.03);
+    cursor: pointer
+  }
+  .birdpic{
+    width: 170px;
+    height: 170px;
+    background-color: blue;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .leftnavwords{
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+  }
+  .biztitle{
+    /*background-color: red;*/
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 60px;
+  }
+  .bizdesc{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-align: left;
+    /*background-color: darkcyan;*/
+  }
+
+  .workarea{
+    background-color: red;
+    width: 95vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+  }
+  .worktitle {
+    text-align: left;
+    margin-left: 2%;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .workdesc{
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 0;
+  }
+  .workcard{
+    background-color: green;
+    height: 500px;
+    width: 500px;
+  }
+  .cardarea{
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+  }
+
 }
