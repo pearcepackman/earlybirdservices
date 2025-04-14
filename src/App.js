@@ -30,7 +30,7 @@ function App() {
             What We Do
           </h1>
           <p className = "workdesc">
-            We do all sorts of things from landscaping, snow removal, demolition, moving services, etc.
+            Meow We do all sorts of things from landscaping, snow removal, demolition, moving services, etc.
           </p>
           <div className = "cardarea">
             <div className = "workcard">
