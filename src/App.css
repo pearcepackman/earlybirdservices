@@ -1,3 +1,6 @@
+:root{
+  --font-size-subheading: 16px;
+}
 html, body {
   height: 100%;
   background: rgb(36,36,36);
@@ -18,7 +21,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(10px + 1vmin);
     color: white;
   }
 
@@ -46,7 +49,7 @@ html, body {
     /*background-color: blueviolet;*/
     justify-content: space-around;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     font-weight: 700;
   }
