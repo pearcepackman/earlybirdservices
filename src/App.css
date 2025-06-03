@@ -1,13 +1,16 @@
 :root{
-  --font-size-subheading: 16px;
-  --font-size-heading: 28px;
+  --font-size-subheading: 18px;
+  --font-size-heading: 40px;
   --desc-color: rgb(212, 212, 212);
 }
 html, body {
   height: 100%;
   background: rgb(36,36,36);
 }
-
+@font-face {
+  font-family: 'Western';
+  src: url('./fonts/Western\ Brother.ttf');
+}
 @media (min-width: 1024px){
 
 
@@ -16,7 +19,7 @@ html, body {
     
   }
   .App-header {
-    background-color: #f5f7fa;
+    background-color: #f1f1f1;
     min-height: 100vh;
     
     display: flex;
@@ -28,48 +31,61 @@ html, body {
   }
 
   .navarea{
-    background-color: #3687c9;
-    width: 97.5vw;
+    /*background-color: #3687c9;*/
+    width: 100vw;
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 0;
     justify-content: space-between;
-    border-radius: 16px;
-    margin-bottom: 10px;
+    
+    margin-bottom: 15px;
     
   }
   .topnav{
     background-color: #489ee4;
     width: 100%;
     display: flex;
-    height: 170px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    height: 200px;
+    
   }
   .navoptions{
-    /*background-color: blueviolet;*/
-    gap: 10px;
+    background-color: #3687c9;
+    gap: 0px;
+    height: auto;
+    
     justify-content: space-around;
     display: flex;
     font-size: var(--font-size-subheading);
     text-align: center;
     font-weight: 700;
+    line-height: 1;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
   .navoptions *{
-    
-    transition: all .2s ease;
+    filter:brightness(92%);
+    transition: all .1s ease;
+    /*background-color: red;*/
+    width: 10%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; 
+    margin: 10px;
     
   }
   .navoptions *:hover{
-    transform: scale(1.03);
+    filter:brightness(100%);
+    transform: scale(1.05);
     cursor: pointer
   }
   .birdpic{
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     background-color: blue;
-    margin-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -77,9 +93,17 @@ html, body {
     /*background-color: orange;*/
     display: flex;
     flex-direction: column;
-    
+    width: 70%;
+    text-align: center;
     justify-content: center;
+    align-items: center;
     
+  }
+  .righthandnav{
+    /*background-color: red;*/
+    margin-right: auto;
+    display: flex;
+    margin-left: auto;
   }
   .biztitle{
     /*background-color: red;*/
@@ -87,7 +111,13 @@ html, body {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
-    font-size: 60px;
+    font-size: 340%;
+    font-family: 'Western';
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    display: flex;
+    line-height: 1;
   }
   .bizdesc{
     margin-top: 0;
@@ -96,30 +126,44 @@ html, body {
     text-align: left;
     font-size: var(--font-size-subheading);
     /*background-color: darkcyan;*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1;
   }
 
   .workarea{
-    background-color: #489ee4;
-    width: 97.5vw;
+    /*background-color: #489ee4;*/
+    width: 94vw;
     height: auto;
     display: flex;
     flex-direction: column;
     margin-bottom: auto;
-    border-radius: 16px;
+    
   }
   .worktitle {
     text-align: left;
     margin-left: 10px;
     font-size: var(--font-size-heading);
     margin-bottom: 0;
+    
+    font-family: 'Western';
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    display: flex;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
   }
   .workdesc{
-    text-align: left;
+    text-align: center;
     margin-left: 13px;
     margin-top: 0;
+    line-height: 1;
+    justify-content: center;
+    display: flex;
   }
   .workcard{
-    background-color: #424242;
+    background-color: #489ee4;
     height: 480px;
     width: 460px;
     display: flex;
@@ -130,36 +174,43 @@ html, body {
     margin-bottom: 1%;
     transition: all .2s ease;
     filter: brightness(95%);
-    border-radius: 10px;
+    border-radius: 5px;
+    animation: cardslide 0.5s ease;
   }
   .workcard:hover{
-    transform: scale(1.01);
+    transform: scale(1.012);
     filter: brightness(100%);
     cursor: pointer;
   }
   .cardarea{
     /*background-color: orange;*/
-    background-color: #3687c9;
+    /*background-color: #3687c9;*/
     display: flex;
     justify-content: space-around;
     height: auto;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0px;
+    
   }
   .workcardpic{
     background-color: gray;
     width: 460px;
     height: 460px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
   .workcardtitle p{
     /*background-color: red;*/
     margin: 0 2%;
-    font-size: var(--font-size-heading);
-    font-weight: 750;
-    line-height: 1.5;
+    font-size: 26px;
+    justify-content: center;
     padding-bottom: 5px;
+    font-family: 'Western';
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    display: flex;
+    line-height: 1.5;
     
   }
   .workcarddesc p{
@@ -173,5 +224,15 @@ html, body {
     color: var(--desc-color);
   }
 
+  @keyframes cardslide{
+    0% {
+      transform: translateY(3%);
+      opacity:60%;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 }

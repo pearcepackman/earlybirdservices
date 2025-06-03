@@ -9,11 +9,14 @@ function App() {
         
         <div className = "navarea">
           <div className = "topnav">
-            <div className = "birdpic"></div>
             <div className = "leftnavwords">
-              <h1 className = "biztitle">Early Bird Services, LLC</h1>
+              <h1 className = "biztitle">Early Bird Services LLC</h1>
               <h5 className = "bizdesc">Serving all of Carroll County and surrounding areas. Lawn care, landscaping, junk removal, demolition, and snow removal! </h5>
             </div>
+            <div className='righthandnav'>
+              <div className = "birdpic"></div>
+            </div>
+            
           </div>
           <div className = "navoptions">
             
@@ -28,10 +31,10 @@ function App() {
 
         <div className = "workarea">
           <h1 className = "worktitle">
-            What We Do
+            
           </h1>
           <p className = "workdesc">
-            Everything from landscaping, snow removal, demolition, moving, and other services! 
+             
           </p>
           <div className = "cardarea">
             <div className = "workcard">
