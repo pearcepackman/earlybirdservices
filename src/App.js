@@ -38,19 +38,23 @@ function App() {
              
           </p>
           <div className = "cardarea">
-            <div className = "workcard">
-              <div className = "workcardpic">
-                
+
+            <a href = "/landscaping">
+              <div className = "workcard">
+                <div className = "workcardpic">
+                  
+                </div>
+                <div className = "workcardtitle">
+                  <p>Landscaping and Lawn Care</p>
+                </div>
+                <div className = "workcarddesc">
+                  <p>Some description about the type of work it is and what he does. Im gonna yap about a bunch of stuff here so i can test the view with a description
+                    I feel like if i keep writing this will overflow unfortunately which i dont wanna have to fix lol
+                  </p>
+                </div>
               </div>
-              <div className = "workcardtitle">
-                <p>Landscaping and Lawn Care</p>
-              </div>
-              <div className = "workcarddesc">
-                <p>Some description about the type of work it is and what he does. Im gonna yap about a bunch of stuff here so i can test the view with a description
-                  I feel like if i keep writing this will overflow unfortunately which i dont wanna have to fix lol
-                </p>
-              </div>
-            </div>
+            </a>
+
             <div className = "workcard">
               <div className = "workcardpic">
                 

@@ -193,6 +193,9 @@ html, body {
     gap: 0px;
     
   }
+  .cardarea a{
+    font-style: none;
+  }
   .workcardpic{
     background-color: gray;
     width: 460px;
