@@ -5,7 +5,7 @@
 }
 html, body {
   height: 100%;
-  background: rgb(36,36,36);
+  background:  #f1f1f1;
 }
 @font-face {
   font-family: 'Western';
@@ -163,20 +163,22 @@ html, body {
     justify-content: center;
     display: flex;
   }
+  .workcardtext{
+    /*background-color: red;*/
+    flex: 1;
+  }
   .workcard{
     background-color: #489ee4;
     height: 480px;
     width: 460px;
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1%;
     transition: all .2s ease;
     filter: brightness(95%);
     border-radius: 5px;
     animation: cardslide 0.5s ease;
+    overflow: hidden;
   }
   .workcard:hover{
     transform: scale(1.012);
@@ -193,15 +195,28 @@ html, body {
     gap: 0px;
     
   }
-  .cardarea a{
-    font-style: none;
+  a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
   }
   .workcardpic{
     background-color: gray;
-    width: 460px;
-    height: 460px;
+    flex: 3;
+    overflow: hidden;
+    /*width: 460px;
+    height: 460px;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+  .workcardpic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
   }
   .workcardtitle p{
     /*background-color: red;*/
@@ -234,80 +249,45 @@ html, body {
     background-color: red;
     margin-bottom: 2%;
   }
-  .contactarea{
-    background-color: #489ee4;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2%;
-    padding: 1%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    
-  }
-  .birdpiccontact{
-    width: 275px;
-    height: 275px;
-    background-color: blue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: auto;
-  }
-  .formtitle{
-    margin-bottom: 0;
-    font-weight: 100;
-    /*background-color: green;*/
-    font-size: 45px;
-    line-height: 1;
-    font-family: 'Western';
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 50%;
-    padding: 1rem;
-  }
-
-  .contact-form label {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    line-height: 1.45;
-    text-align: left;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-
-.contact-form button {
-  padding: 10px;
-  background-color: #3687c9;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  }
-
-.contact-form button:hover {
-  background-color: #2a6fa3;
-  }
+  
 
 .footer{
-  background-color: gray;
+  background-color: #489ee4;
   width: 100%;
-  height: 150px;
+  height: 160px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerbox{
+  /*background-color: red;*/
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.footerbox h1{
+  font-size: 14px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+.footerbox h2{
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.footerline{
+  height: 1px;
+  width: 50%;
+  background-color: #f1f1f1;
+  align-self: center;
+  margin: 0;
+}
+.socialpic{
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

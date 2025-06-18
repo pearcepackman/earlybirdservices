@@ -1,0 +1,16 @@
+.worktitle{
+    background-color: #3687c9;
+    border-radius: 7px;
+    margin-top: 0;
+    line-height: 1.2;
+    width: 100%;
+    align-self: center;
+    font-size: 60px;
+    animation: cardslide 0.5s ease;
+    transition: all .2s ease;
+    filter: brightness(95%);
+}
+.worktitle:hover{
+    transform: scale(1.005);
+    filter: brightness(100%);
+}

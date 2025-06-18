@@ -1,0 +1,22 @@
+.contacttitle{
+    background-color: #3687c9;
+    border-radius: 7px;
+    margin-top: 0;
+    margin-bottom: 1.25%;
+    line-height: 1.2;
+    width: 50%;
+    align-self: center;
+    font-size: 60px;
+    font-family: 'Western';
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    animation: cardslide 0.5s ease;
+    transition: all .2s ease;
+    filter: brightness(95%);
+}
+
+.contacttitle:hover{
+    transform: scale(1.005);
+    filter: brightness(100%);
+}

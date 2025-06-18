@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Landscaping from './pages/landscaping'
+import Contact from './pages/contact'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router';
 
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path = "/" element = {<App/>} />
         <Route path = "/landscaping" element = {<Landscaping/>} />
+        <Route path = "/contact" element = {<Contact/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

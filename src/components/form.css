@@ -1,0 +1,69 @@
+.contactarea{
+    background-color: #489ee4;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+  }
+  .birdpiccontact{
+    width: 275px;
+    height: 275px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+  }
+  .formtitle{
+    margin-bottom: 0;
+    font-weight: 100;
+    /*background-color: green;*/
+    font-size: 45px;
+    line-height: 1;
+    font-family: 'Western';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 1.45;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+.contact-form button {
+  padding: 10px;
+  background-color: #3687c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  }
+
+.contact-form button:hover {
+  background-color: #2a6fa3;
+  }
